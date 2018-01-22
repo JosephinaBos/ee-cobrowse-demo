@@ -19,7 +19,6 @@ def serve_static(filepath):
 
 @route('/.well-known/acme-challenge/<filepath:path>')
 def serve_static2(filepath):
-    print 'Got: ', filepath
     return """fSHu9WGZjlVWLgZxdwdPqhLFOupBm5g0n0XCNkz5D5A.816jpOxBpafSbLnQc2hx-1fpOGFg_uMIvHrTRKHgP9g"""
 
 @post("/join/")
