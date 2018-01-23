@@ -2,20 +2,43 @@
 <html lang="en">
 <head>
     <title>CarGlass Demo</title>
+    <style>
+        html,body {
+            background: url(luke-chesser-48.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover; /* For WebKit*/
+            -moz-background-size: cover;    /* Mozilla*/
+            -o-background-size: cover;      /* Opera*/
+            background-size: cover;         /* Generic*/
+        }
 
+        #form {
+            margin-top: 100px;
+            border-radius: 25px;
+            background-color: white;
+            padding: 30px;
+            width: 400px;
+            height: 400px;
+
+        }
+
+        #sessidtarget {
+            position: relative;
+            color: #633333;
+            top: 100px;
+        }
+    </style>
 
 </head>
 
 <body class="slabtexted">
     <center>
 
+        <div id="form">
 
-    <img itemprop="logo" src="https://www.carglass.nl/fileadmin/template/assets/bu/nl/logo.png" width="150" height="40" alt="Carglass®">
+    <img itemprop="logo" src="https://www.carglass.nl/fileadmin/template/assets/bu/nl/logo.png" alt="Carglass®">
 
-                    <h1>
-                        <span class="text-bold slabText">Session Code:</span>
-                    </h1>
-                    <h1 id="sessidtarget"></h1>
+                    <h1 id="sessidtarget">Please wait...</h12
+        </div>
 
 
 <script>
@@ -33,7 +56,7 @@ window.addEventListener('DOMContentLoaded', function() {
               Surfly.session()
                 .on('session_started', function(session, event) {   
                    // send the pin to the current session
-                   document.getElementById("sessidtarget").innerText = session.pin;
+                   document.getElementById("sessidtarget").innerText = "Your session code is: "+ session.pin;
                  })
                 .on('viewer_joined', function(session, event) {
                     // if a viewer joins and they are the first then redirect to home page
