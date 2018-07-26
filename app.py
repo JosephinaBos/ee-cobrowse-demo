@@ -9,7 +9,7 @@ static_path = os.path.join(current_path, 'static')
 def hello_world():
     return static_file('vanad.html', root=static_path)
 
-@route("/taiyeequiKai1Moo9eek4eih2jotiadail9Piul3Dieb5eeh8w")
+@route("/DFfdg563dg4Ddjs7fJ478wGJeh4B6e56")
 def serve_form():
     return static_file('form.html', root=static_path)
 
