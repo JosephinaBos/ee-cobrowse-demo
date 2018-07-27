@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>EE Co-browsing Demo</title>
+    <title>EE Billing</title>
     <style>
         html,body {
             background-color: #01b5b5;
-            background: url(static/eebackground.jpg) no-repeat center center fixed;
             -webkit-background-size: auto; /* For WebKit*/
             -moz-background-size: auto;    /* Mozilla*/
             -o-background-size: auto;      /* Opera*/
             background-size: auto;         /* Generic*/
         }
 
-        @media only screen and (max-width: 600px) {
-            html,body {
-                background: url(static/eebackground.jpg) repeat fixed;
-            }
+        h1 {
+            color: white;
+            font-family: sans-serif;
         }
 
         #form {
@@ -33,18 +31,23 @@
             color: #696464;
             top: 100px;
         }
+
+        .slabtexted {
+            margin-top: 400px;
+        }
     </style>
 
 </head>
 
 <body class="slabtexted">
-    <center>
 
+    <center>
+        <h1>Welcome to EE billing</h1>
         <div id="form">
 
-    <img itemprop="logo" src="https://ee.co.uk/content/dam/everything-everywhere/images/logos/ee-logo-1600x900.png.eeimg.480.270.medium.png/1387216886599.png" alt="EE®" style="width: 300px;">
+    <img itemprop="logo" src="static/ee-logo-yellow.png" alt="EE®" style="width: 300px;">
 
-                    <h1 id="sessidtarget" style="font-family: sans-serif;">Please wait...</h1>
+                    <h2 id="sessidtarget" style="font-family: sans-serif;">Please wait...</h2>
         </div>
 
 
